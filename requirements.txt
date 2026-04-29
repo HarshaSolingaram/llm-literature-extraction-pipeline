@@ -1,0 +1,12 @@
+pandas
+numpy
+pymupdf
+pdfplumber
+spacy
+nltk
+sentence-transformers
+scikit-learn
+streamlit
+sqlalchemy
+pymysql
+python-dotenv
