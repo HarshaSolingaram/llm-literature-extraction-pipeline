@@ -3,7 +3,7 @@ import pandas as pd
 import os
 
 
-CSV_FILE = "results/llm_extractions.csv"
+CSV_FILE = "results/final_smart_paper_extractions.csv"
 DB_FILE = "results/literature_pipeline.db"
 
 
@@ -21,7 +21,7 @@ def load_csv_to_database():
     conn = create_connection()
 
     df.to_sql(
-        "llm_extractions",
+        "paper_extractions",
         conn,
         if_exists="replace",
         index=False
@@ -29,7 +29,7 @@ def load_csv_to_database():
 
     conn.close()
 
-    print("Data loaded into SQLite database successfully.")
+    print("Paper-level data loaded into SQLite database successfully.")
     print(f"Database created at: {DB_FILE}")
     print(f"Rows inserted: {len(df)}")
 

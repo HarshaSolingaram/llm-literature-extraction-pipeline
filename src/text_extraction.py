@@ -7,9 +7,6 @@ OUTPUT_DIR = "data/extracted_text"
 
 
 def extract_text_from_pdf(pdf_path):
-    """
-    Extracts text from a PDF file using PyMuPDF.
-    """
     text = ""
 
     try:
@@ -29,10 +26,6 @@ def extract_text_from_pdf(pdf_path):
 
 
 def process_all_pdfs():
-    """
-    Reads all PDFs from data/raw_pdfs and saves extracted text
-    into data/extracted_text.
-    """
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
     pdf_files = [

@@ -10,3 +10,5 @@ streamlit
 sqlalchemy
 pymysql
 python-dotenv
+openai
+pydantic
